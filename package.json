@@ -1,0 +1,20 @@
+{
+  "name": "always-thunk",
+  "version": "0.0.0",
+  "description": "Create thunk from async or sync function",
+  "repository": "tunnckoCore/always-thunk",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "always-callback": "~1.0.0",
+    "manage-arguments": "~1.0.0"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0"
+  },
+  "keywords": []
+}
