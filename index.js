@@ -11,6 +11,9 @@ var alwaysCallback = require('always-callback')
 var manageArguments = require('manage-arguments')
 
 module.exports = function alwaysThunk (obj) {
+  if (typeof obj !== 'function') {
+    throw new TypeError('always-thunk expect a function')
+  }
   return function () {
     var args = manageArguments(arguments)
     return function (done) {
