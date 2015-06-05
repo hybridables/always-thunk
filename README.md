@@ -16,7 +16,20 @@ npm test
 > For more use-cases see the [tests](./test.js)
 
 ```js
+var fs = require('fs')
 var alwaysThunk = require('always-thunk')
+
+var readFile = alwaysThunk(fs.readFile)
+readFile('./package.json', 'utf8')(function (err, res) {
+  console.log(err) //=> null
+  console.log(res) //=> package.json content
+})
+
+var readFileSync = alwaysThunk(fs.readFileSync)
+readFileSync('./package.json', 'utf8')(function (err, res) {
+  console.log(err) //=> null
+  console.log(res) //=> package.json content
+})
 ```
 
 
