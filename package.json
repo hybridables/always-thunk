@@ -1,7 +1,7 @@
 {
   "name": "always-thunk",
   "version": "0.0.0",
-  "description": "Create thunk from async or sync function",
+  "description": "Create thunk from async or sync function. Works like `thunkify`.",
   "repository": "tunnckoCore/always-thunk",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
   "main": "index.js",
