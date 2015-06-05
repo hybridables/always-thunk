@@ -33,6 +33,14 @@ readFileSync('./package.json', 'utf8')(function (err, res) {
 ```
 
 
+## Related
+- [always-promise](https://github.com/tunnckocore/always-promise#readme): Create Bluebird Promise from given async or synchronous function. It automatically convert sync functions to async, then to promise.
+- [always-callback](https://github.com/tunnckocore/always-callback#readme): Create callback api for given sync function. Guarantee that given function (sync or async, no matter) will always have callback api and will handle errors correctly.
+- [handle-callback](https://github.com/hybridables/handle-callback#readme): Make promise to have support for callback api, it returns promise in that same time.
+- [make-callback](https://github.com/tunnckocore/make-callback#readme): Make synchronous function to support callback api
+- [promise2thunk](https://github.com/tunnckocore/promise2thunk#readme): Convert (transform) promise to thunk, just like was in co@3
+
+
 ## Contributing
 
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/always-thunk/issues/new).  
