@@ -1,7 +1,7 @@
 {
   "name": "always-thunk",
   "version": "1.0.0",
-  "description": "Create thunk from async or sync function. Works like `thunkify`.",
+  "description": "Thunkify, basically, everything. Generator function, callback-style or synchronous function; sync function that returns child process, stream or observable; directly passed promise, stream or child process.",
   "repository": "tunnckoCore/always-thunk",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
   "main": "index.js",
@@ -10,8 +10,8 @@
     "test": "standard && node test.js"
   },
   "dependencies": {
-    "always-callback": "~1.0.0",
-    "manage-arguments": "~1.0.0"
+    "merz": "^0.6.0",
+    "sliced": "^1.0.1"
   },
   "devDependencies": {
     "assertit": "^0.1.0"

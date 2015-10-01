@@ -7,18 +7,14 @@
 
 'use strict'
 
-var alwaysCallback = require('always-callback')
-var manageArguments = require('manage-arguments')
-
-module.exports = function alwaysThunk (obj) {
-  if (typeof obj !== 'function') {
-    throw new TypeError('always-thunk expect a function')
-  }
+module.exports = function alwaysThunk (val) {
+  var self = this
   return function () {
-    var args = manageArguments(arguments)
+    var ctx = self || this
+    var args = require('sliced')(arguments)
     return function (done) {
-      var fn = alwaysCallback(obj)
-      fn.apply(obj, args.concat(done))
+      ctx = ctx || this
+      require('merz').call(ctx, val).apply(ctx, args.concat(done))
     }
   }
 }
